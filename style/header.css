@@ -27,7 +27,7 @@
 .header__menu {
     outline: none;
 
-    color: rgb(95, 95, 95);
+    color: #80868b;
 
     border: none;
     border-radius: 100px;
@@ -73,7 +73,7 @@
 
     border: none;
 
-    background-color: #f0efef;
+    background-color: #f5f5f5;
 }
 
 .input-search__searchbar:focus {
@@ -98,7 +98,7 @@
 
     margin-left: 14px;
 
-    color: rgb(95, 95, 95);
+    color: #80868b;
 }
 
 .header-left {
@@ -109,13 +109,17 @@
 
 .header-logo {
     margin-left: 7px;
-    margin-right: 16px;
+    margin-right: 10px;
 
     cursor: pointer;
 }
 
 .view-btn-wrapper {
     margin-right: 20px;
+    margin-left: 5px;
+    display: flex;
+    align-items: flex-end;
+    color: #80868b;
 }
 
 .view-btn {
