@@ -1,88 +1,108 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    font-family: Roboto;
+  font-family: Roboto;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .wrapper {
-    display: grid;
+  display: grid;
 
-    height: calc(100vh - 65px);
+  height: calc(100vh - 65px);
 
-    grid-template-areas: "header header header"
+  grid-template-areas:
+    "header header header"
     "nav content hotnews";
 
-     grid-template-columns: 230px auto 300px; 
+  grid-template-columns: 230px auto 300px;
 }
 
 .content {
-    grid-area: content;
+  grid-area: content;
 }
 
 .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
-    user-select: none;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  user-select: none;
 }
 
 .content-header {
-    padding-bottom: 18px;
-    padding-top: 10px;
+  padding-bottom: 18px;
+  padding-top: 10px;
 
-    widows: 100%;
+  widows: 100%;
 }
 
 .content-header-wrapper {
-    display: flex;
+  display: flex;
 
-    widows: 100%;
+  widows: 100%;
 
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .content-header__title {
-    display: flex;
+  display: flex;
 }
 
 .splitter {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid rgb(199, 199, 199);
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgb(199, 199, 199);
 }
 
 .articles {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 .view-btn {
-    cursor: pointer;
+  cursor: pointer;
 }
