@@ -27,6 +27,8 @@
 .header__menu {
     outline: none;
 
+    padding-top: 2px;
+
     color: #80868b;
 
     border: none;
@@ -87,6 +89,8 @@
 .input-search {
     display: flex;
 
+    padding-top: 2px;
+
     align-items: center;
 }
 
@@ -109,14 +113,14 @@
 
 .header-logo {
     margin-left: 7px;
-    margin-right: 10px;
+    margin-right: 14px;
 
     cursor: pointer;
 }
 
 .view-btn-wrapper {
     margin-right: 20px;
-    margin-left: 5px;
+    margin-left: 4px;
     display: flex;
     align-items: flex-end;
     color: #80868b;
