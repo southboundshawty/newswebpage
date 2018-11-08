@@ -53,6 +53,10 @@
     grid-template-columns: 1fr 2fr;
   }
 
+  .content_view-btn  {
+    /* visibility: hidden; */
+  }
+
   .wrapper {
     grid-template-areas:
       "header"
@@ -61,7 +65,9 @@
 
     grid-row-gap: 8px;
 
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+
+    position: fixed;
   }
 
   .nav {
@@ -70,8 +76,6 @@
 
   .article-mini {
     width: 100%;
-
-    margin-left: -10px;
   }
 }
 

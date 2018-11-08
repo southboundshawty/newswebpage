@@ -44,7 +44,7 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
-    user-select: none; 
+    user-select: none;
 }
 
 .content-header {
@@ -81,4 +81,8 @@ body {
     width: 100%;
 
     flex-flow: column wrap;
+}
+
+.view-btn {
+    cursor: pointer;
 }

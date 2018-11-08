@@ -9,6 +9,14 @@ window.onload = function() {
 
   $("#menu").click(function() {
     $(".nav").slideToggle(150);
+
+    //var chooser = document.getElementById("menu");
+
+    if (this.innerHTML == "arrow_back") {
+      this.innerHTML = "menu";
+    } else {
+      this.innerHTML = "arrow_back";
+    }
   });
 
   $(".header-logo").click(function() {
