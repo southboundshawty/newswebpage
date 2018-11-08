@@ -65,7 +65,7 @@ function mobSwipe() {
 
 function handleGesure(touchendY, touchstartY) {
   if (touchendY < touchstartY) {
-    $(".content-header")[0].style.setProperty("top", "-50px");
+    $(".content-header")[0].style.setProperty("top", "-65px");
   }
   if (touchendY > touchstartY) {
     $(".content-header")[0].style.setProperty("top", "0px");

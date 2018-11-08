@@ -11,6 +11,8 @@
     position: relative;
 
     background-color: #fff;
+
+    padding-top: 2px;
 }
 
 .header-wrapper {
@@ -26,8 +28,6 @@
 
 .header__menu {
     outline: none;
-
-    padding-top: 2px;
 
     color: #80868b;
 
@@ -66,7 +66,7 @@
 
     margin-right: 15px;
 
-    height: 45px;
+    height: 43px;
     min-width: 50px;
 
     font-size: 12pt;
@@ -88,8 +88,6 @@
 
 .input-search {
     display: flex;
-
-    padding-top: 2px;
 
     align-items: center;
 }
