@@ -19,7 +19,7 @@
 .hot-wrapper {
     grid-area: hotnews;
 
-    padding-right: 12px;
+    padding: 5px 20px;
 
     display: grid;
 }

@@ -29,12 +29,12 @@ window.onresize = function() {
 function windowSize() {
   var articleButtonNames = document.getElementsByClassName("article__btn-text");
 
-  if ($(window).width() >= "600") {
-    $(".nav").show(10);
-    $(".hot-news").show(10);
-  } else {
+  if ($(window).width() <= "800") {
     $(".nav").hide(10);
     $(".hot-news").hide(10);
+  } else {
+    $(".nav").show(10);
+    $(".hot-news").show(10);
   }
 
   if ($(".article").width() >= "400") {
