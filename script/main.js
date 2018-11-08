@@ -18,7 +18,7 @@ window.onload = function() {
     }
   });
 
-  $(".header-logo").click(function() {
+  $("#hotclicker").click(function() {
     $(".hot-news").slideToggle(150);
   });
 

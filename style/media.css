@@ -153,6 +153,14 @@
   .header {
     height: 56px;
   }
+
+  #hotclicker {
+    display: flex;
+  }
+
+  #viewChooser {
+    display: none;
+  }
 }
 
 .article-wrapper-mini {

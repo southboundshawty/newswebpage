@@ -127,3 +127,7 @@
 .view-btn {
     cursor: pointer;
 }
+
+#hotclicker {
+    display: none;
+}
