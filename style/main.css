@@ -40,12 +40,13 @@ body {
   grid-template-areas:
     "header header header"
     "nav content hotnews";
-
+    
   grid-template-columns: 230px auto 300px;
 }
 
 .content {
   grid-area: content;
+
 }
 
 .material-icons {
