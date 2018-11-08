@@ -81,6 +81,11 @@
   .article-mini {
     width: 100%;
   }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 }
 
 .article-wrapper-mini {

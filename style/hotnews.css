@@ -1,6 +1,4 @@
 .hot-news {
-    
-
     display: flex;
 
     width: 95%;
@@ -18,7 +16,7 @@
 
 .hot-wrapper {
     grid-area: hotnews;
-    
+
     padding-left: 20px;
 
     display: grid;
