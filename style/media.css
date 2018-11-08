@@ -13,7 +13,7 @@
       "nav hotnews"
       "nav content";
 
-    grid-row-gap: 10px;
+    grid-row-gap: 5px;
 
     grid-template-columns: 230px auto;
   }
@@ -23,7 +23,11 @@
   }
 
   .hot-news {
-    margin-left: 20px;
+    //margin-left: 20px;
+
+    display: flex;
+
+    align-self: center;
 
     min-width: 93%;
   }

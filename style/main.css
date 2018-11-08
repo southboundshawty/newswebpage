@@ -24,7 +24,7 @@
   background: rgba(0, 0, 0, 0.0);
 }
 .md-scroll::-webkit-scrollbar-thumb:active {
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 body {

@@ -1,714 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script/main.js"></script>
-    <link type="text/css" rel="stylesheet" href="style/main.css">
-    <link type="text/css" rel="stylesheet" href="style/nav.css">
-    <link type="text/css" rel="stylesheet" href="style/article.css">
-    <link type="text/css" rel="stylesheet" href="style/header.css">
-    <link type="text/css" rel="stylesheet" href="style/hotnews.css">
-    <link type="text/css" rel="stylesheet" href="style/media.css">
+    <link type="text/css" rel="stylesheet" href="style/main.css" />
+    <link type="text/css" rel="stylesheet" href="style/nav.css" />
+    <link type="text/css" rel="stylesheet" href="style/article.css" />
+    <link type="text/css" rel="stylesheet" href="style/header.css" />
+    <link type="text/css" rel="stylesheet" href="style/hotnews.css" />
+    <link type="text/css" rel="stylesheet" href="style/media.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header-wrapper">
-            <div class="header-left">
-                <button class="header__menu">
-                    <i id="menu" class="material-icons">menu</i>
-                </button>
-                <h3 class="header-logo">НОВОСТИ</h3>
-            </div>
-            <div class="input-search">
-                <i class="input-search__icon material-icons">search</i>
-                <input type="text" class="input-search__searchbar" placeholder="Поиск новостей статей...">
-                <div class="view-btn-wrapper">
-                    <i id="viewChooser" class="view-btn material-icons">view_module</i>
-                </div>
-            </div>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <button class="header__menu">
+            <i id="menu" class="material-icons">menu</i>
+          </button>
+          <h3 class="header-logo">НОВОСТИ</h3>
         </div>
+        <div class="input-search">
+          <i class="input-search__icon material-icons">search</i>
+          <input
+            type="text"
+            class="input-search__searchbar"
+            placeholder="Поиск новостей статей..."
+          />
+          <div class="view-btn-wrapper">
+            <i id="viewChooser" class="view-btn material-icons">view_module</i>
+          </div>
+        </div>
+      </div>
     </header>
     <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-wrapper">
-                <a href="#about" class="nav-item nav-item_add">
-                    <div class="nav-item-wrapper">
-                        <i class="material-icons">add</i>
-                        <div class="nav-item__text">Добавить новость</div>
-                    </div>
-                </a>
-                <a href="#about" class="nav-item">
-                    <div class="nav-item-wrapper">
-                        <i class="material-icons">language</i>
-                        <div class="nav-item__text">Самое главное</div>
-                    </div>
-                </a>
-                <a href="#products" class="nav-item">
-                    <div class="nav-item-wrapper">
-                        <i class="material-icons">_</i>
-                        <!--room-->
-                        <div class="nav-item__text">Местные новости</div>
-                    </div>
-                </a>
-                <a href="#uslugi" class="nav-item">
-                    <div class="nav-item-wrapper">
-                        <i class="material-icons">_</i>
-                        <!--subject-->
-                        <div class="nav-item__text">Статьи</div>
-                    </div>
-                </a>
-                <hr class="nav-splitter">
-                <a href="#podpiski" class="nav-item">
-                    <div class="nav-item-wrapper">
-                        <i class="material-icons">games</i>
-                        <div class="nav-item__text">Выбор категории</div>
-                    </div>
-                </a>
-                <hr class="nav-splitter">
-                <a href="" class="nav-item">
-                    <div class="nav-item-wrapper">
-                        <i class="material-icons">home</i>
-                        <div class="nav-item__text">Зарегистрироваться</div>
-                    </div>
-                </a>
-                <a href="" class="nav-item">
-                    <div class="nav-item-wrapper">
-                        <i class="material-icons">_</i>
-                        <div class="nav-item__text">Войти</div>
-                    </div>
-                </a>
+      <nav class="nav">
+        <div class="nav-wrapper">
+          <a href="#about" class="nav-item nav-item_add">
+            <div class="nav-item-wrapper">
+              <i class="material-icons">add</i>
+              <div class="nav-item__text">Добавить новость</div>
             </div>
-        </nav>
-        <div class="content md-scroll">
-            <div class="content-header">
-                <div class="content-header-wrapper">
-                    <h3 class="content-header__title">Заголовки</h3>
-                </div>
+          </a>
+          <a href="#about" class="nav-item">
+            <div class="nav-item-wrapper">
+              <i class="material-icons">language</i>
+              <div class="nav-item__text">Самое главное</div>
             </div>
-            <!--<a name="about"></a>-->
-            <div class="articles">
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <button class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
-                <article class="article">
-                    <div class="article-wrapper">
-                        <div class="article-content">
-                            <h1 class="article-title">Далеко-далеко за словесными горами.</h1>
-                            <p class="article-paragraph">
-                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Знаках
-                                всемогущая вершину, текстами правилами возвращайся океана большой рекламных которой
-                                решила
-                                точках гор семантика встретил буквоград! Запятых вершину великий парадигматическая мир
-                                точках, вопроса ipsum текст от всех домах которой толку страна не щеке назад деревни на
-                                берегу до меня вопрос послушавшись знаках ведущими свой речью! Своих дороге, назад
-                                снова
-                                раз это, текст за, предложения имени взгляд ручеек необходимыми большой рыбными города
-                                о
-                                меня вскоре злых не вдали? Своего взгляд повстречался свое там до! Послушавшись силуэт
-                                сбить коварный, что ведущими вершину за путь семь речью взгляд скатился пояс гор.
-                                Оксмокс
-                                составитель заголовок но образ вопрос вскоре вдали предупреждал, не инициал однажды
-                                себя он
-                                вопроса свой решила рукописи. Рыбными речью за взгляд от всех, моей путь пунктуация ему
-                                они. Заманивший сбить то вопроса всемогущая ее, точках правилами путь океана, ведущими
-                                страна запятой семантика за силуэт текстов мир до! Раз эта если лучше правилами журчит
-                                даже
-                                маленький осталось своих парадигматическая, использовало переписывается всемогущая над
-                                напоивший грустный, за путь рукопись свой оксмокс. Океана обеспечивает залетают
-                                подпоясал
-                                лучше использовало всемогущая свой по всей путь речью сих, точках родного рот ipsum
-                                пояс
-                                пустился рыбными осталось безопасную грамматики алфавит вопроса но! Собрал дал снова
-                                все
-                                единственное она, страна жизни рыбными вопрос.
-                            </p>
-                            <div class="acticle__time">3 часа назад</div>
-                            <div class="article-footer">
-                                <div class="article__btn _like">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite</i>
-                                        <div class="article__btn-text">
-                                            Нравится
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="article__btn _unlike">
-                                    <div class="article__btn-wrapper">
-                                        <i class="material-icons">favorite_border</i>
-                                        <div class="article__btn-text">
-                                            Не нравится
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="article__btn">
-                                    <div class="article__btn-wrapper">
-                                        <div class="article__btn-text">
-                                            Подробнее
-                                        </div>
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="article-img-wrapper">
-                            <div class="article-img"></div>
-                        </div>
-                    </div>
-                </article>
+          </a>
+          <a href="#products" class="nav-item">
+            <div class="nav-item-wrapper">
+              <i class="material-icons">_</i>
+              <!-- room -->
+              <div class="nav-item__text">Местные новости</div>
             </div>
+          </a>
+          <a href="#uslugi" class="nav-item">
+            <div class="nav-item-wrapper">
+              <i class="material-icons">_</i>
+              <!-- subject -->
+              <div class="nav-item__text">Статьи</div>
+            </div>
+          </a>
+          <hr class="nav-splitter" />
+          <a href="#podpiski" class="nav-item">
+            <div class="nav-item-wrapper">
+              <i class="material-icons">games</i>
+              <div class="nav-item__text">Выбор категории</div>
+            </div>
+          </a>
+          <hr class="nav-splitter" />
+          <a href="" class="nav-item">
+            <div class="nav-item-wrapper">
+              <i class="material-icons">home</i>
+              <div class="nav-item__text">Зарегистрироваться</div>
+            </div>
+          </a>
+          <a href="" class="nav-item">
+            <div class="nav-item-wrapper">
+              <i class="material-icons">_</i>
+              <div class="nav-item__text">Войти</div>
+            </div>
+          </a>
         </div>
+      </nav>
+      <div class="content md-scroll">
+        <div class="content-header">
+          <div class="content-header-wrapper">
+            <h3 class="content-header__title">Заголовки</h3>
+          </div>
+        </div>
+        <!-- <a name="about"></a> -->
+        <div class="articles">
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <button class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1 class="article-title">
+                  Далеко-далеко за словесными горами.
+                </h1>
+                <p class="article-paragraph">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Знаках всемогущая вершину,
+                  текстами правилами возвращайся океана большой рекламных
+                  которой решила точках гор семантика встретил буквоград!
+                  Запятых вершину великий парадигматическая мир точках, вопроса
+                  ipsum текст от всех домах которой толку страна не щеке назад
+                  деревни на берегу до меня вопрос послушавшись знаках ведущими
+                  свой речью! Своих дороге, назад снова раз это, текст за,
+                  предложения имени взгляд ручеек необходимыми большой рыбными
+                  города о меня вскоре злых не вдали? Своего взгляд повстречался
+                  свое там до! Послушавшись силуэт сбить коварный, что ведущими
+                  вершину за путь семь речью взгляд скатился пояс гор. Оксмокс
+                  составитель заголовок но образ вопрос вскоре вдали
+                  предупреждал, не инициал однажды себя он вопроса свой решила
+                  рукописи. Рыбными речью за взгляд от всех, моей путь
+                  пунктуация ему они. Заманивший сбить то вопроса всемогущая ее,
+                  точках правилами путь океана, ведущими страна запятой
+                  семантика за силуэт текстов мир до! Раз эта если лучше
+                  правилами журчит даже маленький осталось своих
+                  парадигматическая, использовало переписывается всемогущая над
+                  напоивший грустный, за путь рукопись свой оксмокс. Океана
+                  обеспечивает залетают подпоясал лучше использовало всемогущая
+                  свой по всей путь речью сих, точках родного рот ipsum пояс
+                  пустился рыбными осталось безопасную грамматики алфавит
+                  вопроса но! Собрал дал снова все единственное она, страна
+                  жизни рыбными вопрос.
+                </p>
+                <div class="acticle__time">3 часа назад</div>
+                <div class="article-footer">
+                  <div class="article__btn _like">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite</i>
+                      <div class="article__btn-text">Нравится</div>
+                    </div>
+                  </div>
+                  <button class="article__btn _unlike">
+                    <div class="article__btn-wrapper">
+                      <i class="material-icons">favorite_border</i>
+                      <div class="article__btn-text">Не нравится</div>
+                    </div>
+                  </button>
+                  <button class="article__btn">
+                    <div class="article__btn-wrapper">
+                      <div class="article__btn-text">Подробнее</div>
+                      <i class="material-icons">keyboard_arrow_down</i>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="article-img-wrapper">
+                <div class="article-img"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="hot-wrapper">
         <div class="hot-news">
-            <div class="hot-news-wrapper">
-                <div class="hot-news__title">
-                    <h3 class="hot-news__title">В тренде</h3>
-                    <i class="hot-news__title-icon material-icons">whatshot</i>
-                </div>
-                <hr class="splitter">
-                <div class="hot-news__content">
-                    <input class="hot-news__item" type="button" value="Украина">
-                    <input class="hot-news__item" type="button" value="Керчь">
-                    <input class="hot-news__item" type="button" value="Мемы">
-                    <input class="hot-news__item" type="button" value="Путин">
-                    <input class="hot-news__item" type="button" value="Россия">
-                    <input class="hot-news__item" type="button" value="11 этаж УЛК">
-                    <input class="hot-news__item" type="button" value="BM Memes">
-                    <input class="hot-news__item" type="button" value="Пиво">
-                </div>
+          <div class="hot-news-wrapper">
+            <div class="hot-news__title">
+              <h3 class="hot-news__title">В тренде</h3>
+              <i class="hot-news__title-icon material-icons">whatshot</i>
             </div>
+            <hr class="splitter" />
+            <div class="hot-news__content">
+              <input class="hot-news__item" type="button" value="Украина" />
+              <input class="hot-news__item" type="button" value="Керчь" />
+              <input class="hot-news__item" type="button" value="Мемы" />
+              <input class="hot-news__item" type="button" value="Путин" />
+              <input class="hot-news__item" type="button" value="Россия" />
+              <input class="hot-news__item" type="button" value="11 этаж УЛК" />
+              <input class="hot-news__item" type="button" value="BM Memes" />
+              <input class="hot-news__item" type="button" value="Пиво" />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
