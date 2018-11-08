@@ -10,21 +10,21 @@
 
 .md-scroll::-webkit-scrollbar {
   width: 6px;
-  height: 6px;
+  height: 3px;
 }
 .md-scroll::-webkit-scrollbar-track {
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.0);
 }
 .md-scroll::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.0);
 }
 .md-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.0);
 }
 .md-scroll::-webkit-scrollbar-thumb:active {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.0);
 }
 
 body {
