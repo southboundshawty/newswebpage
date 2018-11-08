@@ -13,7 +13,7 @@
       "nav hotnews"
       "nav content";
 
-    grid-row-gap: 5px;
+    grid-row-gap: 0px;
 
     grid-template-columns: 230px auto;
   }
@@ -67,7 +67,7 @@
       "hotnews"
       "content";
 
-    grid-row-gap: 8px;
+    grid-row-gap: 0px;
 
     grid-template-columns: 1fr;
 
