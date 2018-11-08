@@ -33,8 +33,10 @@ function windowSize() {
 
   if ($(window).width() >= "600") {
     $(".nav").show(10);
+    $(".hot-news").show(10);
   } else {
     $(".nav").hide(10);
+    $(".hot-news").hide(10);
   }
 
   if ($(".article").width() >= "400") {
