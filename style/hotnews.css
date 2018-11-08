@@ -19,13 +19,13 @@
 .hot-wrapper {
     grid-area: hotnews;
 
-    padding: 5px 20px;
+    margin-left: 35px;
 
     display: grid;
 }
 
 .hot-news-wrapper {
-    padding: 15px 20px;
+    padding: 13px 20px;
 }
 
 .hot-news__title {
