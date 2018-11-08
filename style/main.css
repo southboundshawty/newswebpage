@@ -6,6 +6,15 @@
   margin: 0;
 
   font-family: Roboto;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .md-scroll::-webkit-scrollbar {
@@ -31,12 +40,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  
 }
 
 .wrapper {
@@ -57,7 +61,7 @@ body {
   grid-area: content;
 
   padding: 15px 20px;
-  
+
   overflow-x: hidden;
 
   -webkit-overflow-scrolling: touch;
@@ -99,8 +103,21 @@ body {
   justify-content: space-between;
 }
 
-.content-header__title {
+.content-header {
   display: flex;
+
+  //transition: .3s;
+
+  position: sticky;
+  top: 0px;
+}
+
+.content-header__title {
+  padding: 5px 10px;
+
+  border-radius: 8px;
+
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .splitter {

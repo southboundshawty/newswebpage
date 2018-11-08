@@ -140,6 +140,10 @@
 
     margin-left: 0px;
   }
+
+  .header {
+    height: 56px;
+  }
 }
 
 .article-wrapper-mini {
