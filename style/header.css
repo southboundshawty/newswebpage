@@ -172,6 +172,8 @@
 
   padding-left: 10px;
 
+  display: none;
+
   z-index: 400;
   position: fixed;
 
