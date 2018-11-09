@@ -13,7 +13,7 @@ window.onload = function() {
   });
 
   $("#menu").click(function() {
-    $(".nav").slideToggle(150);
+    $(".nav").toggle(150);
 
     if (this.innerHTML == "arrow_back") {
       this.innerHTML = "menu";
