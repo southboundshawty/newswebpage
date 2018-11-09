@@ -117,15 +117,31 @@
 }
 
 .view-btn-wrapper {
-    margin-right: 20px;
-    margin-left: 4px;
+    margin-right: 10px;
+    margin-left: 2px;
     display: flex;
+
     align-items: flex-end;
     color: #80868b;
 }
 
 .view-btn {
     cursor: pointer;
+
+    padding: 14px 14px;
+
+    border-radius: 100px;
+    
+
+    background-color: transparent;
+}
+
+.view-btn:active {
+    background-color: #e3edfd;
+
+    color: #1a73e8;
+
+    transition: .2s;
 }
 
 #hotclicker {

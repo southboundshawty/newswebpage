@@ -135,8 +135,34 @@ body {
   width: 100%;
 
   flex-flow: column wrap;
+
+  //display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+ // height: 400px;
 }
 
 .view-btn {
   cursor: pointer;
+}
+
+.content__flag {
+  position: sticky;
+
+  display: none;
+
+  top: 3em;
+}
+
+.conter-flag-wrapper {
+  display: flex;
+  
+
+  display: none;
+
+  width: 100%;
+  padding-top: 5px;
+
+  justify-content: flex-start;
 }

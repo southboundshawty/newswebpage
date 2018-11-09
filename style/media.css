@@ -55,6 +55,10 @@
     margin-left: 0px;
     padding-left: 20px;
   }
+
+  #hotclicker {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 500px) {
