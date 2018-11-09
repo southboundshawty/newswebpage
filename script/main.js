@@ -8,6 +8,10 @@ window.onload = function() {
     chooseViewOfArticles();
   });
 
+  $('#search').click(function(){
+    $('.header-search_mob').slideToggle(50);
+  });
+
   $("#menu").click(function() {
     $(".nav").slideToggle(150);
 

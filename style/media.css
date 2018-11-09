@@ -165,6 +165,27 @@
   #viewChooser {
     display: none;
   }
+
+
+  .input-search__searchbar {
+    visibility: hidden;
+  }
+
+  .input-search__icon {
+    display: none;
+  }
+
+  #search {
+    display: flex;
+  }
+
+  .header-search_mob {
+    display: none;
+  }
+}
+
+.header-search_mob-wrapper {
+  display: flex;
 }
 
 .article-wrapper-mini {
