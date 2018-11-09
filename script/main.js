@@ -9,7 +9,7 @@ window.onload = function() {
   });
 
   $('#search').click(function(){
-    $('.header-search_mob').slideToggle(50);
+    $('.header-search_mob').toggle(100);
   });
 
   $("#menu").click(function() {
