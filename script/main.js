@@ -40,9 +40,7 @@ window.onresize = function() {
 };
 
 function mobSwipe() {
-  var touchstartX = 0;
   var touchstartY = 0;
-  var touchendX = 0;
   var touchendY = 0;
 
   var gesuredZone = document.getElementsByClassName("content")[0];
