@@ -9,7 +9,6 @@
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -82,8 +81,12 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "liga";
-  user-select: none;
+  -webkit-font-feature-settings: "liga";
+          font-feature-settings: "liga";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .content-header {
@@ -94,17 +97,27 @@ body {
 }
 
 .content-header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   widows: 100%;
 
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+
+      -ms-flex-pack: justify;
+
+          justify-content: space-between;
 }
 
 .content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   //transition: .3s;
+
+  position: -webkit-sticky;
 
   position: sticky;
   top: 0px;
@@ -132,11 +145,20 @@ body {
   height: 100%;
   width: 100%;
 
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+
+  -webkit-box-direction: normal;
+
+      -ms-flex-flow: column wrap;
+
+          flex-flow: column wrap;
 
   //display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 
  // height: 400px;
 }
@@ -146,6 +168,7 @@ body {
 }
 
 .content__flag {
+  position: -webkit-sticky;
   position: sticky;
 
   display: none;
@@ -154,6 +177,8 @@ body {
 }
 
 .conter-flag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   display: none;
@@ -161,5 +186,9 @@ body {
   width: 100%;
   padding-top: 5px;
 
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+
+      -ms-flex-pack: start;
+
+          justify-content: flex-start;
 }
