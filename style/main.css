@@ -39,8 +39,6 @@
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-
-  
 }
 
 .wrapper {
@@ -157,7 +155,6 @@ body {
 
 .conter-flag-wrapper {
   display: flex;
-  
 
   display: none;
 
