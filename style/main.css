@@ -167,6 +167,10 @@ body {
   cursor: pointer;
 }
 
+.view-btn:active {
+  background-color: transparent;
+}
+
 .content__flag {
   position: -webkit-sticky;
   position: sticky;
